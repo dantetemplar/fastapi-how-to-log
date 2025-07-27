@@ -82,19 +82,16 @@ async def error():
 ```
 [2025-07-27 20:24:48,880] [INFO] [File "app.py", line 19] This will show with source code location and timing
 [2025-07-27 20:24:48,880] [INFO] [File "app.py", line 20] Handler `root` took 1 ms
+[2025-07-27 21:59:30,463] [INFO] [uvicorn.access] 127.0.0.1:59962 - "GET /error HTTP/1.1" 500
+[2025-07-27 21:59:30,464] [ERROR] [uvicorn.error] Exception in ASGI application
 
+Traceback (most recent call last):
+  File "/home/dante/fastapi-how-to-log/app.py", line 54, in error
+    raise Exception("This is a test error")
+Exception: This is a test error
 ```
 
 The file path in the log message will be clickable ([File "app.py", line 19]) in your IDE, taking you directly to the source code.
-
-## Configuration
-
-The logging configuration is automatically set up with:
-
-- **Source Code Logger**: `src` logger with file path and line number information
-- **Access Logs**: Clean uvicorn access logs
-- **Error Logs**: Filtered error logs with cleaned stack traces
-- **HTTPX Suppression**: Reduces HTTP client library noise
 
 ## Customization
 

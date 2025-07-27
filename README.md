@@ -9,31 +9,33 @@ A comprehensive logging solution for FastAPI applications that provides enhanced
 - **Precise Location**: Shows exact line numbers where log messages originate
 - **Relative Paths**: Uses relative paths for cleaner output
 
+https://github.com/user-attachments/assets/1badb8a6-b525-405e-8e5f-e5585be2be37
+
 ### 🧹 Clean Log Output
 - **Reduced Boilerplate**: Filters out verbose FastAPI and uvicorn logs
 - **HTTPX Filtering**: Suppresses noisy HTTP client library logs
 - **Error Focus**: Shows only your application's errors, not framework noise
 - **Stack Trace Cleanup**: Removes irrelevant framework stack
 
+
+https://github.com/user-attachments/assets/572d0217-c10d-4af8-b4d8-deeac88ceb54
+
 ### ⏱️ Performance Monitoring
 - **Handler Timing**: Automatically measures and logs execution time for each endpoint handler
-- **Millisecond Precision**: Shows timing in milliseconds for accurate performance analysis
-- **Zero Overhead**: Minimal performance impact with efficient timing implementation
- trace entries
 
-### 🎨 Enhanced Visual Experience
-- **Colored Log Levels**: Different colors for INFO, WARNING, ERROR, etc.
-- **Timestamp Formatting**: Clean, readable timestamps
-- **Structured Output**: Consistent formatting across all log messages
+<img width="864" height="280" alt="image" src="https://github.com/user-attachments/assets/b8f3dbb0-77b8-4fcd-92cb-5bab1395f6c8" />
 
 ### 🚨 Exception Handling & Logging
 - **Validation Error Logging**: Automatically logs Pydantic validation errors with detailed context
 - **HTTP Exception Tracking**: Captures and logs HTTP exceptions with proper error details
 - **Human Readable Error Messages**: Returns clean error messages while maintaining comprehensive logging
 
+<img width="916" height="378" alt="image" src="https://github.com/user-attachments/assets/e26e14e6-935e-4026-8a35-7dfe5d7fa25c" />
+
+
 ## Usage
 
-Simply copy the `logging_.py` module into your project and use it as follows:
+Copy the `logging_.py` module into your project and use it as follows:
 
 ```python
 import logging_  # noqa

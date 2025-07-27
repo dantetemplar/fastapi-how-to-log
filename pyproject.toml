@@ -1,0 +1,22 @@
+[project]
+name = "fastapi-how-to-log"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "colorlog>=6.9.0",
+    "fastapi[standard]>=0.116.1",
+    "pyyaml>=6.0.2",
+]
+
+[tool.ruff]
+line-length = 120
+lint.ignore = [
+    # wildcard imports are fine
+    "F403",
+    "F405",
+    "PLR"
+]
+lint.extend-select = ["I", "UP", "PL"]
+target-version = "py312"

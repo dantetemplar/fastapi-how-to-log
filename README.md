@@ -26,6 +26,7 @@ https://github.com/user-attachments/assets/572d0217-c10d-4af8-b4d8-deeac88ceb54
 <img width="864" height="280" alt="image" src="https://github.com/user-attachments/assets/b8f3dbb0-77b8-4fcd-92cb-5bab1395f6c8" />
 
 <h3 id="exceptions">🚨 Exception Handling & Logging</h3>
+
 - **Validation Error Logging**: Automatically logs Pydantic validation errors with detailed context
 - **HTTP Exception Tracking**: Captures and logs HTTP exceptions with proper error details
 - **Human Readable Error Messages**: Returns clean error messages while maintaining comprehensive logging
